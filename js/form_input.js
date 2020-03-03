@@ -18,3 +18,24 @@ function setInputFilter(textbox, inputFilter) {
 
   setInputFilter(document.getElementById("numCharacterValue"), function(value) {
     return /^\d*$/.test(value); });
+
+
+
+    function copyPassword() {
+        /* Get the text field */
+        var copyText = document.getElementById("passwordResultForm");
+      
+        /* Making text field enabled to select it */
+        copyText.removeAttribute("disabled");
+
+        /* Select the text field */
+        copyText.select();
+        copyText.setSelectionRange(0, 99999); /*For mobile devices*/
+      
+        /* Copy the text inside the text field */
+        document.execCommand("copy");
+
+        /* Disabling the text field after text has been copied to the clip board */
+        copyText.setAttributeNode(document.createAttribute("disabled"));
+      }
+      

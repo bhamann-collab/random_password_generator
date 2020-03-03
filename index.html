@@ -36,7 +36,7 @@
         <!--End Test-->
         <div class="row">
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="unchecked" id="LowerCase">
+                <input class="form-check-input" type="checkbox" checked id="LowerCase">
                 <label class="form-check-label" for="defaultCheck1">
                   Include Lowercase Characters
                 </label>
@@ -68,10 +68,10 @@
         </div>
         <div class="row">
             <div class="col col-lg-10">
-                <textarea name="" id="passwordResultForm" cols="10" rows="1" class="form-control"></textarea>
+                <textarea name="" id="passwordResultForm" cols="10" rows="1" class="form-control" disabled></textarea>
             </div>
             <div class="col col-lg-2">
-                <button type="button" class="btn btn-secondary">Copy Text</button>
+                <button type="button" class="btn btn-secondary" id="copyToClipboard" onclick="copyPassword()">Copy Password</button>
             </div>
         </div>
     </div>
