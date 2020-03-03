@@ -1,21 +1,46 @@
 
 
-
-
 function generatePassword() {
-    var numCharacter = document.getElementById("numCharacterValue").value;
-    var resultPassword = "";
+    //Getting the number of characters the password will have via the DOM
+    var numCharacter = parseInt(document.getElementById("numCharacterValue").value,10);
+
+    //Getting the checkbox's values via the DOM
     var lowerCase = document.getElementById("LowerCase").checked;
     var upperCase = document.getElementById("UpperCase").checked;
     var number = document.getElementById("Number").checked;
     var special = document.getElementById("Special").checked;
+
+    //Out of bound cases starts here:
+    if(numCharacter === ""){
+        alert("Please enter password length");
+        return;
+    }
+
+    if(numCharacter < 8 || numCharacter > 128) {
+        alert("Incorrect password length. Password length needs to be in range from 8 to 128");
+        return;
+    }
+
+    if(Number.isInteger(numCharacter) === false){
+        alert("Incorrect password length syntax. Needs to be an integer");
+        return;
+    }
+
+    if(lowerCase === false && upperCase === false && number === false && special === false){
+        alert("Need to tick one of the boxes");
+        return;
+    }
+    //Out of bound cases ends here:
+
+    var resultPassword = "";
     for (i = 0; i < numCharacter; i++){
         resultPassword += randomCharacter(lowerCase, upperCase, number, special);
     }
     console.log(resultPassword);
+    document.getElementById("passwordResultForm").innerHTML = resultPassword;
 }
 
-//test = generatePassword();
+
 
 
 //Functions that generate a single letter
