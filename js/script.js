@@ -1,41 +1,18 @@
+
+
+
+
 function generatePassword() {
-    while(true){
-        var passwordLength = parseInt(prompt("Length of password (Please select from 8-128)"));
-        if (passwordLength <= 128 && passwordLength >= 8 && Number.isInteger(passwordLength)){
-            break;
-        } else if (isNaN(passwordLength)) {
-            break;
-        }
+    var numCharacter = document.getElementById("numCharacterValue").value;
+    var resultPassword = "";
+    var lowerCase = document.getElementById("LowerCase").checked;
+    var upperCase = document.getElementById("UpperCase").checked;
+    var number = document.getElementById("Number").checked;
+    var special = document.getElementById("Special").checked;
+    for (i = 0; i < numCharacter; i++){
+        resultPassword += randomCharacter(lowerCase, upperCase, number, special);
     }
-
-    if (confirm("Would you like lower-case letters in your password?")) {
-        var lowerCaseLetters = true;
-    } else {
-        var lowerCaseLetters = false;
-    }
-
-    if (confirm("Would you like Upper-case letters in your password?")) {
-        var upperCaseLetters = true;
-    } else {
-        var upperCaseLetters = false;
-    }
-    
-    if (confirm("Would you like numerical characters in your password?")) {
-        var numericalCharacters = true;
-    } else {
-        var numericalCharacters = false;
-    }
-
-    if (confirm("Would you like special characters in your password?")) {
-        var specialCharacters = true;
-    } else {
-        var specialCharacters = false;
-    }
-    var finalGeneratedPassword = []
-    for(var i = 0; i < passwordLength; i++){
-    
-    }
-
+    console.log(resultPassword);
 }
 
 //test = generatePassword();
@@ -75,7 +52,7 @@ function specialCharacter() {
 function randomCharacter(lowercase, uppercase, numeric, special) {
     randArray = [lowercase, uppercase, numeric, special];
     var emergencyCounter = 0;
-    while (testCount <= 1000){
+    while (emergencyCounter <= 1000){
         randNum = Math.floor(Math.random() * 4);
         if (randArray[randNum] === true){
             switch(randNum) {
