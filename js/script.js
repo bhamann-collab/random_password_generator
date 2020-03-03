@@ -68,6 +68,10 @@ function specialCharacter() {
 }
 //End of functions that generate a single letter
 
+
+
+
+//randomCharacter takes in 4 parameters relating to the kind of character you want to generate. If the parameter is 'true' the function will consider the kind of character to be randomly generated
 function randomCharacter(lowercase, uppercase, numeric, special) {
     randArray = [lowercase, uppercase, numeric, special];
     var emergencyCounter = 0;
@@ -86,11 +90,6 @@ function randomCharacter(lowercase, uppercase, numeric, special) {
     }
 }
 
-//Testing
-
-randNum = Math.floor(Math.random() * 4);
-
-//Testing
 
 /*
 We need the password generator to consists of these requirements:
