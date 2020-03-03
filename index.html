@@ -3,10 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <title>Password Generator</title>
 </head>
-<body>
-    
+<body class="bg-light">
+    <div class="container">
+        <div class="py-5 text-center">
+            <img src="data:image/png;base64,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" alt="Padlock">
+            <h2>
+                Password Generator
+            </h2>
+            <p>
+                Simply select how many characters you want your password to be. Then select what type of characters you want to include in your password.
+            </p>
+        </div>
+    </div>
 
     <script src="js/script.js"></script>
 </body>
