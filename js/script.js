@@ -68,7 +68,29 @@ function specialCharacter() {
 }
 //End of functions that generate a single letter
 
+function randomCharacter(lowercase, uppercase, numeric, special) {
+    randArray = [lowercase, uppercase, numeric, special];
+    var emergencyCounter = 0;
+    while (testCount <= 1000){
+        randNum = Math.floor(Math.random() * 4);
+        if (randArray[randNum] === true){
+            switch(randNum) {
+                case 0: return lowercaseLetter();
+                case 1: return uppercaseLetter();
+                case 2: return numericCharacter();
+                case 3: return specialCharacter();
+            }
+            break;
+        }
+        emergencyCounter++;
+    }
+}
 
+//Testing
+
+randNum = Math.floor(Math.random() * 4);
+
+//Testing
 
 /*
 We need the password generator to consists of these requirements:
