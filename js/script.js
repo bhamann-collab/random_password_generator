@@ -11,18 +11,13 @@ function generatePassword() {
     var special = document.getElementById("Special").checked;
 
     //Out of bound cases starts here:
-    if(numCharacter === ""){
-        alert("Please enter password length");
-        return;
-    }
-
     if(numCharacter < 8 || numCharacter > 128) {
         alert("Incorrect password length. Password length needs to be in range from 8 to 128");
         return;
     }
 
     if(Number.isInteger(numCharacter) === false){
-        alert("Incorrect password length syntax. Needs to be an integer");
+        alert("Please enter password length");
         return;
     }
 
