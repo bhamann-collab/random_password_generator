@@ -29,7 +29,7 @@
 }
 
 .bg-secondary {
-    background-color: #B1A296;
+    background-color: #BAB2B5;
     border-radius: 5px;
 }
 
@@ -43,7 +43,18 @@
 body{
     height: 100vh;
     overflow: scroll;
+    color: #123C69;
 }
 
+.padlock{
+    color: #AC3B61;
+}
 
+.password-length {
+    font-weight: 700;
+}
 
+h1 {
+    font-weight: 800;
+    font-size: 50px;
+}
