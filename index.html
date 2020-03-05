@@ -11,85 +11,84 @@
     <title>Password Generator</title>
 </head>
 <body class="bg-light">
-    <div class="container bg-secondary">
-        <div class="row">
-            <div class="py-5 text-center">
-                <h1 class="font-weight-bolder">
-                    Password Generator
-                </h1>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-6 col-md-6">
+    <div class="container-center">
+        <div class="container bg-secondary">
+            <div class="row">
                 <div class="py-5 text-center">
-                    <!--<img  src="data:image/png;base64,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" alt="Padlock" class="img-responsive center-block">-->
-                    <svg alt="Padlock" class="" width="100%" height="100%S" viewBox="0 0 40 20">
-                        
-                        <path d="M 11.251854,7.8389094 H 3.3703797 V 5.8761746 c 0,-1.7532294 1.4264604,-3.1798594 3.1798594,-3.1798594 1.4316768,0 2.6934591,0.9633855 3.0687876,2.3427284 0.1229042,0.4519633 0.5889903,0.7186798 1.0410383,0.5958605 0.452048,-0.1229042 0.718807,-0.5890325 0.59586,-1.0410807 C 10.680422,2.477734 8.7452535,1 6.5501119,1 3.8613179,1 1.6738101,3.1875078 1.6738101,5.8763018 V 7.8574849 C 1.2895755,7.9381488 1,8.2795493 1,8.6874911 v 7.4238709 c 0,0.467782 0.3805025,0.8482 0.8482,0.8482 h 9.403569 c 0.467783,0 0.8482,-0.380503 0.8482,-0.8482 V 8.6874911 c 0,-0.4677823 -0.380502,-0.8482 -0.8482,-0.8482 M 7.6893293,14.185948 c 0.017303,0.09169 -0.04487,0.166713 -0.1381718,0.166713 H 5.5715859 c -0.093302,0 -0.155475,-0.07502 -0.1381717,-0.166713 l 0.3151911,-1.67053 C 5.5100066,12.297812 5.3602569,11.984444 5.3602569,11.636089 c 0,-0.657143 0.532712,-1.190025 1.1900246,-1.190025 0.657143,0 1.1900246,0.532712 1.1900246,1.190025 0,0.338898 -0.1419038,0.64442 -0.3692639,0.861135 z" class="svgPadlock">
-
-                        </path>
-                    </svg>
+                    <h1 class="font-weight-bolder">
+                        Password Generator
+                    </h1>
                 </div>
             </div>
-            <div class="col-lg-6 col-md-6">
-                <div class="py-5 text-center">
-                    <p>
-                        Simply select how many characters you want your password to be. Then select what type of characters you want to include in your password.
-                    </p>
-                </div>
-                <div class="input-group input-group-sm mb-3">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text text-muted" id="inputGroup-sizing-sm">Password Length (Range: 8-128 characters)</span>
+            <div class="row">
+                <div class="col-lg-6 col-md-6">
+                    <div class="py-5 text-center">
+                        <img src="padlock.png" alt="padlock icon" class="img-responsive center-block" width="149"/>
                     </div>
-                    <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" id="numCharacterValue">
                 </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" checked id="LowerCase">
-                    <label class="form-check-label" for="defaultCheck1">
-                      Include Lowercase Characters
-                    </label>
-                </div> 
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="unchecked" id="UpperCase">
-                    <label class="form-check-label" for="defaultCheck2">
-                      Include Uppercase Characters
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="unchecked" id="Number">
-                    <label class="form-check-label" for="defaultCheck3">
-                      Include Numbers
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="unchecked" id="Special">
-                    <label class="form-check-label" for="defaultCheck4">
-                      Include Special Characters
-                    </label>
+                <div class="col-lg-6 col-md-6">
+                    <div class="py-5 text-center">
+                        <p>
+                            Simply select how many characters you want your password to be. Then select what type of characters you want to include in your password.
+                        </p>
+                    </div>
+                    <div class="input-group input-group-sm mb-3">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text text-muted" id="inputGroup-sizing-sm">Password Length (Range: 8-128 characters)</span>
+                        </div>
+                        <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" id="numCharacterValue">
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" checked id="LowerCase">
+                        <label class="form-check-label" for="defaultCheck1">
+                          Include Lowercase Characters
+                        </label>
+                    </div> 
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="unchecked" id="UpperCase">
+                        <label class="form-check-label" for="defaultCheck2">
+                          Include Uppercase Characters
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="unchecked" id="Number">
+                        <label class="form-check-label" for="defaultCheck3">
+                          Include Numbers
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="unchecked" id="Special">
+                        <label class="form-check-label" for="defaultCheck4">
+                          Include Special Characters
+                        </label>
+                    </div>
                 </div>
             </div>
-        </div>
-        <!--Start Test-->
-        
-        <!--End Test-->
-        <div class="row">
+            <!--Start Test-->
             
-        </div>
-        <div class="row">
-            <button type="button" class="btn btn-secondary btn-lg btn-block" onclick="generatePassword()">Generate Password</button>
-        </div>
-        <div class="row">
-            <div class="spacer5"></div>
-        </div>
-        <div class="row">
-            <div class="col col-lg-10">
-                <textarea name="" id="passwordResultForm" cols="10" rows="1" class="form-control" disabled></textarea>
+            <!--End Test-->
+            <div class="row">
+                
             </div>
-            <div class="col col-lg-2">
-                <button type="button" class="btn btn-secondary" id="copyToClipboard" onclick="copyPassword()">Copy Password</button>
+            <div class="row">
+                <div class="col-lg-12">
+                    <button type="button" class="btn btn-secondary btn-lg btn-block" onclick="generatePassword()">Generate Password</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="spacer5"></div>
+            </div>
+            <div class="row marginbottom50 row54">
+                <div class="col col-lg-11 col-md-10 col-sm-10 paddingright2_5">
+                    <textarea id="passwordResultForm" cols="10" rows="2" class="form-control" disabled></textarea>
+                </div>
+                <div class="col col-lg-1 col-md-2 col-sm-2 paddingleft2_5 row54">
+                    <button type="button" class="btn btn-secondary btn-block btn-size" id="copyToClipboard" onclick="copyPassword()">Copy</button>
+                </div>
             </div>
         </div>
     </div>
+    
 
     <script src="js/script.js"></script>
     <script src="js/form_input.js"></script>
