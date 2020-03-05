@@ -21,6 +21,7 @@ function setInputFilter(textbox, inputFilter) {
 
 
 
+    //CopyPassword allows you to copy the password with the click of a button on the site
     function copyPassword() {
         /* Get the text field */
         var copyText = document.getElementById("passwordResultForm");

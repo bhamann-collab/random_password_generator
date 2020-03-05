@@ -1,5 +1,3 @@
-
-
 function generatePassword() {
     //Getting the number of characters the password will have via the DOM
     var numCharacter = parseInt(document.getElementById("numCharacterValue").value,10);
@@ -38,7 +36,7 @@ function generatePassword() {
 
 
 
-//Functions that generate a single letter
+//Functions that generate a single letter start here
 function lowercaseLetter() {
     var alphabet = "abcdefghijklmnopqrstuvwxyz";
     var randomLowercaseLetter = alphabet[Math.floor(Math.random() * alphabet.length)];
@@ -86,10 +84,3 @@ function randomCharacter(lowercase, uppercase, numeric, special) {
         emergencyCounter++;
     }
 }
-
-
-/*
-We need the password generator to consists of these requirements:
-* User can select between 8 characters and 128 characters
-* User can choose to include lowercase, uppercase, numeric and special characters
-*/

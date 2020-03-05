@@ -1,5 +1,12 @@
-.spacer5 {
-    height: 5px;
+h1 {
+    font-weight: 800;
+    font-size: 50px;
+}
+
+body {
+    height: 100vh;
+    overflow: scroll;
+    color: #123C69;
 }
 
 @media only screen and (min-width: 768px) {
@@ -40,12 +47,6 @@
     display: flex;
 }
 
-body{
-    height: 100vh;
-    overflow: scroll;
-    color: #123C69;
-}
-
 .padlock{
     color: #AC3B61;
 }
@@ -54,7 +55,6 @@ body{
     font-weight: 700;
 }
 
-h1 {
-    font-weight: 800;
-    font-size: 50px;
+.spacer5 {
+    height: 5px;
 }
