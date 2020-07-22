@@ -8,4 +8,4 @@ This website allows a user to generate a password to their liking. They can sele
 * script.js holds all the logic that generates a password that the user wants
 * form_input.js holds all the extra logic that manipulates the form to solve boundary cases (eg. You can only type an integer in the Password Length form)
 
-
+Website Here: https://bhamann-collab.github.io/random_password_generator/
